@@ -1,0 +1,1714 @@
+/* ===================================================================
+   ROYALVISTAS INDIA TOURS & CAR RENTALS - MASTER STYLESHEET
+   Clean, Professional, Speedline-Inspired Indian Tour & Chauffeur Fleet
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  /* Refined Indian Travel & Fleet Color Palette */
+  --royal-navy: #09172e;
+  --navy-dark: #060f1e;
+  --navy-light: #12284b;
+  --navy-subtle: #1e3a6a;
+
+  /* Saffron Gold Heritage Accent */
+  --saffron: #f59e0b;
+  --saffron-dark: #d97706;
+  --saffron-light: #fef3c7;
+  --saffron-gradient: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+
+  /* WhatsApp Brand Green */
+  --whatsapp-green: #25d366;
+  --whatsapp-dark: #128c7e;
+  --whatsapp-teal: #075e54;
+  --whatsapp-light: #dcf8c6;
+  --whatsapp-bg: #efeae2;
+
+  /* Neutral Slates - Enhanced Contrast */
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --bg-page: #f8fafc;
+  --bg-white: #ffffff;
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(9, 23, 46, 0.04);
+  --shadow-md: 0 8px 24px rgba(9, 23, 46, 0.08);
+  --shadow-lg: 0 16px 36px rgba(9, 23, 46, 0.12);
+  --shadow-whatsapp: 0 10px 25px rgba(37, 211, 102, 0.35);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --transition: all 0.25s ease-in-out;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  line-height: 1.6;
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-font {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--royal-navy);
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--saffron-dark);
+}
+
+/* ===================================================================
+   TOP BAR (Speedline Style Support & Permit Info)
+   =================================================================== */
+.top-bar {
+  background-color: var(--navy-dark);
+  color: #e2e8f0;
+  font-size: 0.825rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar a {
+  color: #f1f5f9;
+}
+.top-bar a:hover {
+  color: var(--saffron);
+}
+
+.top-bar-badge {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.775rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.top-bar-divider {
+  opacity: 0.3;
+  margin: 0 10px;
+}
+
+/* ===================================================================
+   MAIN NAVBAR
+   =================================================================== */
+.main-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 0.85rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: var(--transition);
+}
+
+.main-navbar.scrolled {
+  padding: 0.6rem 0;
+  box-shadow: 0 6px 25px rgba(9, 23, 46, 0.1);
+}
+
+.navbar-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-icon-box {
+  width: 44px;
+  height: 44px;
+  background: var(--royal-navy);
+  color: var(--saffron);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 12px rgba(9, 23, 46, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.brand-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo-text span {
+  color: var(--saffron);
+}
+
+.brand-tagline {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nav-link-custom {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--royal-navy) !important;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: var(--saffron-dark) !important;
+  background-color: rgba(245, 158, 11, 0.08);
+}
+
+/* Action Buttons */
+.btn-whatsapp-header {
+  background-color: var(--whatsapp-green);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-whatsapp-header:hover {
+  background-color: var(--whatsapp-dark);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+}
+
+.btn-call-header {
+  background-color: #f1f5f9;
+  color: var(--royal-navy) !important;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.btn-call-header:hover {
+  background-color: #e2e8f0;
+  color: var(--royal-navy) !important;
+}
+
+/* ===================================================================
+   HERO SECTION (Taj Mahal Backdrop & Speedline Booking Engine)
+   =================================================================== */
+.hero-wrapper {
+  position: relative;
+  min-height: 640px;
+  background: url('../images/hero-taj-mahal.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 0 5.5rem;
+}
+
+.hero-overlay-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 15, 30, 0.88) 0%,
+    rgba(9, 23, 46, 0.82) 50%,
+    rgba(6, 15, 30, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.18;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title .highlight-saffron {
+  color: #fbbf24;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: #e2e8f0;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+  max-width: 580px;
+}
+
+.hero-features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-feature-item {
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.hero-feature-item i {
+  color: var(--whatsapp-green);
+  font-size: 1.05rem;
+}
+
+/* Hero Quick Booking Card */
+.hero-booking-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.hero-booking-card .card-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  margin-bottom: 0.35rem;
+}
+
+.hero-booking-card .card-subheading {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.form-label-custom {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--royal-navy);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.form-label-custom i {
+  color: var(--saffron-dark);
+}
+
+.form-control-custom,
+.form-select-custom {
+  font-size: 0.9rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  background-color: #f8fafc;
+  transition: var(--transition);
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  background-color: #ffffff;
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  outline: none;
+}
+
+.btn-whatsapp-submit {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  box-shadow: var(--shadow-whatsapp);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-whatsapp-submit:hover {
+  background: linear-gradient(135deg, #1ebe5d 0%, #0d6e63 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+}
+
+/* ===================================================================
+   STATS BAR (Speedline Trust Bar)
+   =================================================================== */
+.stats-ribbon {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--saffron-dark);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.stat-title {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+/* ===================================================================
+   SECTION HEADERS
+   =================================================================== */
+.section-padding {
+  padding: 5rem 0;
+}
+
+.section-padding-sm {
+  padding: 3.5rem 0;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--saffron-dark);
+  background: rgba(245, 158, 11, 0.12);
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.section-main-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.section-lead-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+/* ===================================================================
+   CAR FLEET / SHOW DIFFERENT TYPES OF CARS (Speedline Fleet)
+   =================================================================== */
+.fleet-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.fleet-filter-btn {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--royal-navy);
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.fleet-filter-btn:hover,
+.fleet-filter-btn.active {
+  background: var(--royal-navy);
+  color: #ffffff;
+  border-color: var(--royal-navy);
+  box-shadow: 0 4px 12px rgba(9, 23, 46, 0.15);
+}
+
+.car-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.car-image-wrapper {
+  position: relative;
+  width: 100% !important;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.car-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.car-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(9, 23, 46, 0.85);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.03em;
+}
+
+.car-rate-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #ffffff;
+  color: var(--royal-navy);
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.car-card-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.car-model-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  margin-bottom: 0.35rem;
+}
+
+.car-ideal-for {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.car-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.car-spec-item {
+  text-align: center;
+}
+
+.car-spec-item i {
+  color: var(--saffron-dark);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.car-spec-value {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--royal-navy);
+  display: block;
+}
+
+.car-spec-label {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  display: block;
+}
+
+.car-features-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.car-tag {
+  font-size: 0.725rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.car-card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-car-whatsapp {
+  flex: 1;
+  background-color: var(--whatsapp-green);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-car-whatsapp:hover {
+  background-color: var(--whatsapp-dark);
+  color: #ffffff !important;
+}
+
+.btn-car-select {
+  background-color: rgba(9, 23, 46, 0.06);
+  color: var(--royal-navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(9, 23, 46, 0.15);
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-car-select:hover {
+  background-color: var(--royal-navy);
+  color: #ffffff;
+}
+
+/* ===================================================================
+   INDIAN TOUR PACKAGES SECTION
+   =================================================================== */
+.tour-package-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.tour-image-box {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background-color: #0f172a;
+}
+
+.tour-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tour-package-card:hover .tour-image-box img {
+  transform: scale(1.06);
+}
+
+.tour-badge-days {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--royal-navy);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.tour-badge-price {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #ffffff;
+  color: var(--royal-navy);
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.tour-badge-price span {
+  color: var(--saffron-dark);
+}
+
+.tour-card-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tour-route-badge {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--saffron-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tour-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  margin-bottom: 0.65rem;
+  line-height: 1.3;
+}
+
+.tour-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.tour-highlights-list li {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.tour-highlights-list li i {
+  color: var(--whatsapp-green);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.tour-inclusions-strip {
+  background-color: #f8fafc;
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.75rem;
+  color: #475569;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border-light);
+}
+
+.tour-card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-tour-whatsapp {
+  flex: 1;
+  background-color: var(--whatsapp-green);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-tour-whatsapp:hover {
+  background-color: var(--whatsapp-dark);
+  color: #ffffff !important;
+}
+
+.btn-tour-details {
+  background: #ffffff;
+  color: var(--royal-navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-tour-details:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+/* ===================================================================
+   MASTER WHATSAPP ENQUIRY SECTION (The Core Feature)
+   =================================================================== */
+.enquiry-section-wrapper {
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.enquiry-master-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.enquiry-form-header {
+  background: var(--royal-navy);
+  color: #ffffff;
+  padding: 1.75rem 2.25rem;
+  border-bottom: 2px solid var(--saffron);
+}
+
+.enquiry-form-header h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.enquiry-form-header p {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.enquiry-form-body {
+  padding: 2.25rem;
+}
+
+/* WhatsApp Live Preview Simulation Card */
+.whatsapp-preview-wrapper {
+  background: var(--whatsapp-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid #d1d7db;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.whatsapp-preview-header {
+  background: var(--whatsapp-teal);
+  color: #ffffff;
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.whatsapp-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whatsapp-teal);
+  font-size: 1.35rem;
+}
+
+.whatsapp-header-info h6 {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.whatsapp-header-info span {
+  font-size: 0.75rem;
+  color: #a7f3d0;
+}
+
+.whatsapp-chat-area {
+  padding: 1.25rem;
+  flex-grow: 1;
+  background-image: radial-gradient(#d4cfc5 1px, transparent 1px);
+  background-size: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.whatsapp-chat-bubble {
+  background: var(--whatsapp-light);
+  border-radius: 8px 8px 2px 8px;
+  padding: 1rem 1.15rem;
+  font-size: 0.825rem;
+  line-height: 1.5;
+  color: #111b21;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+  max-width: 95%;
+  align-self: flex-end;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.whatsapp-chat-time {
+  font-size: 0.68rem;
+  color: #667781;
+  text-align: right;
+  margin-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.whatsapp-preview-footer {
+  background: #f0f2f5;
+  padding: 0.85rem 1.15rem;
+  border-top: 1px solid #e9edef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.785rem;
+  color: #54656f;
+}
+
+.whatsapp-guarantees-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.guarantee-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.guarantee-item:last-child {
+  margin-bottom: 0;
+}
+
+.guarantee-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.15);
+  color: var(--whatsapp-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.guarantee-text h6 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.guarantee-text p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* ===================================================================
+   SERVICES & WHY CHOOSE US (Speedline Inspired)
+   =================================================================== */
+.service-feature-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.service-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--saffron);
+  box-shadow: var(--shadow-md);
+}
+
+.service-icon-circle {
+  width: 58px;
+  height: 58px;
+  background: rgba(9, 23, 46, 0.05);
+  color: var(--royal-navy);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+}
+
+.service-feature-card:hover .service-icon-circle {
+  background: var(--royal-navy);
+  color: var(--saffron);
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--royal-navy);
+  margin-bottom: 0.65rem;
+}
+
+.service-description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Why Choose Us Cards */
+.why-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+  box-shadow: var(--shadow-md);
+}
+
+.why-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--saffron-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+/* ===================================================================
+   TESTIMONIALS / REVIEWS
+   =================================================================== */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars-rating {
+  color: #f59e0b;
+  font-size: 0.95rem;
+  margin-bottom: 0.85rem;
+}
+
+.testimonial-quote {
+  font-size: 0.925rem;
+  color: #334155;
+  font-style: italic;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1rem;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--royal-navy);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.author-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--royal-navy);
+  margin-bottom: 1px;
+}
+
+.author-tour {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ===================================================================
+   FAQ ACCORDION
+   =================================================================== */
+.accordion-custom .accordion-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm) !important;
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+}
+
+.accordion-custom .accordion-button {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--royal-navy);
+  padding: 1.15rem 1.4rem;
+  background-color: #ffffff;
+  box-shadow: none !important;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background-color: #f8fafc;
+  color: var(--saffron-dark);
+}
+
+.accordion-custom .accordion-body {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  padding: 1.15rem 1.4rem;
+  background-color: #ffffff;
+}
+
+/* ===================================================================
+   FOOTER (Speedline Style)
+   =================================================================== */
+.main-footer {
+  background-color: var(--navy-dark);
+  color: #94a3b8;
+  padding: 4.5rem 0 2rem;
+  border-top: 3px solid var(--saffron);
+}
+
+.footer-brand h4 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand h4 span {
+  color: var(--saffron);
+}
+
+.footer-brand p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background-color: var(--saffron);
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-links-list a {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.footer-links-list a:hover {
+  color: var(--saffron);
+  transform: translateX(4px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-item i {
+  color: var(--saffron);
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Micro interaction utility */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(9, 23, 46, 0.12) !important;
+}
+
+.gallery-card-img {
+  transition: transform 0.4s ease;
+}
+.hover-lift:hover .gallery-card-img {
+  transform: scale(1.06);
+}
+
+/* ===================================================================
+   FLOATING WHATSAPP BUTTON (Speedline Style Sticky CTA)
+   =================================================================== */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  background-color: var(--whatsapp-green);
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  z-index: 1090;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+  background-color: var(--whatsapp-dark);
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
+}
+
+.floating-whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--whatsapp-green);
+  animation: whatsappPulse 2s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.floating-whatsapp-badge {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  border: 2px solid #ffffff;
+}
+
+/* ===================================================================
+   BACK TO TOP BUTTON
+   =================================================================== */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 96px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  background: var(--royal-navy);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-md);
+  z-index: 1080;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-btn:hover {
+  background: var(--saffron-dark);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ===================================================================
+   RESPONSIVE OPTIMIZATIONS & NAVBAR ENHANCEMENTS
+   =================================================================== */
+
+/* Top bar responsiveness */
+@media (max-width: 575.98px) {
+  .top-bar {
+    font-size: 0.75rem;
+    padding: 0.35rem 0;
+  }
+  .top-bar .badge {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.6rem !important;
+  }
+  .top-bar-badge {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+}
+
+/* Tablet & Smaller Desktop Adjustments */
+@media (max-width: 1199.98px) {
+  .nav-link-custom {
+    padding: 0.4rem 0.55rem !important;
+    font-size: 0.86rem;
+    white-space: nowrap;
+  }
+  .btn-whatsapp-header,
+  .btn-call-header {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  .brand-logo-text {
+    font-size: 1.2rem;
+  }
+  .brand-tagline {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-navbar {
+    padding: 0.55rem 0;
+  }
+  .navbar-toggler {
+    padding: 0.2rem 0.4rem;
+  }
+  .navbar-toggler i {
+    font-size: 1.85rem !important;
+  }
+  .brand-icon-box {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+  .brand-logo-text {
+    font-size: 1.15rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .hero-subtitle {
+    font-size: 0.98rem;
+  }
+  .hero-booking-card {
+    margin-top: 2rem;
+    padding: 1.75rem 1.5rem;
+  }
+  .section-main-title {
+    font-size: 1.9rem;
+  }
+  .section-tag {
+    font-size: 0.78rem;
+  }
+  /* Mobile menu offcanvas styling */
+  .offcanvas {
+    max-width: 310px;
+  }
+  .offcanvas .nav-link {
+    padding: 0.65rem 0.85rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+  }
+  .offcanvas .nav-link:hover,
+  .offcanvas .nav-link.active {
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--saffron-dark) !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-wrapper {
+    padding: 3rem 0;
+    min-height: auto;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-booking-card {
+    padding: 1.4rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .enquiry-form-body {
+    padding: 1.25rem 1rem;
+  }
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+  .section-main-title {
+    font-size: 1.65rem;
+  }
+  .floating-whatsapp-btn {
+    bottom: 18px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.65rem;
+  }
+  .back-to-top-btn {
+    bottom: 78px;
+    right: 22px;
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  /* Filter tabs on mobile */
+  .fleet-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .fleet-filter-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.82rem;
+  }
+  /* Modals responsiveness */
+  .modal-dialog {
+    margin: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .top-bar {
+    font-size: 0.75rem;
+    padding: 0.35rem 0;
+  }
+  .top-bar-badge {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+  }
+  .brand-logo-text {
+    font-size: 1.1rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+  .brand-icon-box {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .hero-title {
+    font-size: 1.55rem;
+    line-height: 1.22;
+  }
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+  }
+  .hero-features-list {
+    gap: 0.6rem 1rem;
+  }
+  .hero-feature-item {
+    font-size: 0.82rem;
+  }
+  .stat-box {
+    gap: 0.75rem;
+  }
+  .stat-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.35rem;
+  }
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  .stat-title {
+    font-size: 0.78rem;
+  }
+  .car-image-wrapper {
+    height: 190px;
+  }
+  .tour-image-box {
+    height: 190px;
+  }
+  .car-card-body,
+  .tour-card-body {
+    padding: 1.1rem;
+  }
+  .car-specs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
+  }
+  .car-spec-value {
+    font-size: 0.72rem;
+  }
+  .car-card-actions,
+  .tour-card-actions {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .btn-car-select,
+  .btn-tour-details {
+    width: 100%;
+    text-align: center;
+    padding: 0.55rem 0.75rem;
+  }
+  .enquiry-form-header {
+    padding: 1.25rem 1rem;
+  }
+  .enquiry-form-header h3 {
+    font-size: 1.25rem;
+  }
+  .whatsapp-chat-bubble {
+    max-width: 100%;
+    font-size: 0.8rem;
+    padding: 0.85rem;
+  }
+  .btn-whatsapp-submit {
+    font-size: 0.92rem;
+    padding: 0.75rem 1.2rem;
+  }
+}

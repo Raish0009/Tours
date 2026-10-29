@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet & Tour Gallery | RoyalVistas Tours & Cabs</title>
+  <meta name="description" content="View our fleet of Toyota Innova Crysta, Maruti Dzire, Fortuner, and Force Tempo Travellers, along with iconic Indian tour destinations.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar py-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7 text-center text-md-start">
+          <div class="d-inline-flex flex-wrap align-items-center gap-3">
+            <span class="top-bar-badge"><i class="bi bi-shield-fill-check"></i> All India Tourist Permit (AITP) Approved</span>
+            <span class="top-bar-divider d-none d-sm-inline">|</span>
+            <a href="tel:+919024288xxxx" class="d-inline-flex align-items-center gap-1">
+              <i class="bi bi-telephone-fill text-warning"></i> 24/7 Helpline: <strong>+91 9024288xxxx</strong>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 text-center text-md-end mt-2 mt-md-0">
+          <a href="https://wa.me/919024288xxxx" target="_blank" class="badge bg-success text-white py-1 px-2 rounded-pill d-inline-flex align-items-center gap-1">
+            <i class="bi bi-whatsapp"></i> WhatsApp Helpdesk
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="brand-icon-box">
+          <i class="bi bi-car-front-fill"></i>
+        </div>
+        <div>
+          <div class="brand-logo-text">Royal<span>Vistas</span></div>
+          <span class="brand-tagline">Tours & Chauffeur Fleet India</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggler -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-dark"></i>
+      </button>
+
+      <!-- Desktop Navbar Items -->
+      <div class="collapse navbar-collapse" id="desktopNavMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="index.html#fleetSection">Our Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="packages.html">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a href="tel:+919024288xxxx" class="btn btn-call-header d-none d-xl-inline-flex">
+              <i class="bi bi-telephone-outbound"></i> Call
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a href="https://wa.me/919024288xxxx?text=Hi%20RoyalVistas%20Tours,%20I%20want%20to%20enquire%20about%20your%20fleet%20and%20tours." target="_blank" class="btn btn-whatsapp-header">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= MOBILE OFFCANVAS MENU ================= -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNavMenu" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header border-bottom">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-icon-box" style="width:38px;height:38px;font-size:1.2rem;">
+          <i class="bi bi-car-front-fill"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">RoyalVistas Tours</h6>
+          <small class="text-secondary fw-semibold">India Tour & Cabs</small>
+        </div>
+      </div>
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold" href="index.html" data-bs-dismiss="offcanvas"><i class="bi bi-house-door me-2 text-primary"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold" href="index.html#fleetSection" data-bs-dismiss="offcanvas"><i class="bi bi-truck-front me-2 text-primary"></i> Our Fleet</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold" href="packages.html"><i class="bi bi-geo-alt me-2 text-primary"></i> Indian Tours</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold" href="about.html"><i class="bi bi-info-circle me-2 text-primary"></i> About Us</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold active" href="gallery.html"><i class="bi bi-images me-2 text-primary"></i> Fleet & Gallery</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold" href="contact.html"><i class="bi bi-envelope me-2 text-primary"></i> Contact Us</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="https://wa.me/919024288xxxx?text=Hi%20RoyalVistas%20Tours,%20I%20want%20to%20enquire%20about%20your%20fleet%20and%20tours." target="_blank" class="btn btn-whatsapp-submit w-100 py-3 mb-3">
+          <i class="bi bi-whatsapp fs-5"></i> Quick WhatsApp Enquiry
+        </a>
+        <div class="text-center small text-secondary">
+          <p class="mb-1"><a href="tel:+919024288xxxx" class="text-decoration-none text-dark fw-bold"><i class="bi bi-telephone-fill me-1 text-warning"></i> +91 9024288xxxx</a></p>
+          <p class="mb-0">24/7 Travel Desk & Chauffeur Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INNER BANNER ================= -->
+  <section class="py-5 bg-dark text-white position-relative" style="background: linear-gradient(rgba(9, 23, 46, 0.90), rgba(9, 23, 46, 0.94)), url('images/hero-taj-mahal.jpg') center/cover no-repeat;">
+    <div class="container py-4 text-center">
+      <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm">
+        <i class="bi bi-camera-fill me-1"></i> Visual Tour & Fleet Showcase
+      </span>
+      <h1 class="display-5 fw-bold mb-3 text-white">Our Fleet & Indian Destinations</h1>
+      <p class="lead text-light mb-0 mx-auto" style="max-width: 680px; opacity: 0.95;">
+        A visual glimpse of our sanitized chauffeur-driven vehicles and the breathtaking tourist circuits of Incredible India.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY GRID & FILTERS ================= -->
+  <section class="section-padding bg-body-tertiary">
+    <div class="container">
+
+      <!-- Interactive Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up">
+        <button type="button" class="btn btn-warning fw-bold rounded-pill px-3 py-2 gallery-filter-btn active" data-filter="all">All Photos (9)</button>
+        <button type="button" class="btn btn-outline-warning text-dark fw-bold rounded-pill px-3 py-2 gallery-filter-btn" data-filter="fleet">Chauffeur Fleet (4)</button>
+        <button type="button" class="btn btn-outline-warning text-dark fw-bold rounded-pill px-3 py-2 gallery-filter-btn" data-filter="heritage">Heritage & Desert (2)</button>
+        <button type="button" class="btn btn-outline-warning text-dark fw-bold rounded-pill px-3 py-2 gallery-filter-btn" data-filter="nature">Backwaters & Hills (2)</button>
+        <button type="button" class="btn btn-outline-warning text-dark fw-bold rounded-pill px-3 py-2 gallery-filter-btn" data-filter="spiritual">Spiritual Circuits (1)</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4" id="galleryGrid">
+        
+        <!-- 1. Innova Crysta -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="fleet" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/car-innova-crysta.jpg" alt="Toyota Innova Crysta Tour Car" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-car-front-fill text-warning me-1"></i> Toyota Innova Crysta
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Toyota Innova Crysta (6/7 Seater)</h5>
+                <p class="small text-secondary mb-3">Parked at Udaipur heritage palace. Featuring pushback captain seats, dual AC, and spacious luggage room.</p>
+              </div>
+              <a href="index.html#enquirySection" class="btn btn-outline-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                <i class="bi bi-whatsapp text-success me-1"></i> Book This Car
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Dzire Sedan -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="fleet" data-aos="fade-up" data-aos-delay="50">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/car-sedan-dzire.jpg" alt="Maruti Dzire Sedan" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-car-front-fill text-warning me-1"></i> Maruti Suzuki Dzire
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Maruti Suzuki Dzire Sedan</h5>
+                <p class="small text-secondary mb-3">Ideal for couples & solo business travelers. Highly economical outstation cab for Delhi, Agra, and Jaipur.</p>
+              </div>
+              <a href="index.html#enquirySection" class="btn btn-outline-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                <i class="bi bi-whatsapp text-success me-1"></i> Book This Car
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Force Tempo Traveller -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="fleet" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/car-tempo-traveller.jpg" alt="Force Tempo Traveller Luxury Minibus" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-bus-front-fill text-warning me-1"></i> Force Tempo Traveller
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Force Tempo Traveller (12/17 Seater)</h5>
+                <p class="small text-secondary mb-3">Group family tour bus with 2x1 pushback seats, individual AC vents, and high-roof headroom.</p>
+              </div>
+              <a href="index.html#enquirySection" class="btn btn-outline-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                <i class="bi bi-whatsapp text-success me-1"></i> Book Group Bus
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Toyota Fortuner VIP -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="fleet" data-aos="fade-up" data-aos-delay="150">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/car-luxury-fortuner.jpg" alt="Toyota Fortuner VIP Luxury SUV" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-star-fill text-warning me-1"></i> VIP Luxury SUV
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Toyota Fortuner 4x4 VIP</h5>
+                <p class="small text-secondary mb-3">Executive corporate fleet with uniformed chauffeur service for luxury Rajasthan circuits and weddings.</p>
+              </div>
+              <a href="index.html#enquirySection" class="btn btn-outline-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                <i class="bi bi-whatsapp text-success me-1"></i> Book VIP SUV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Taj Mahal Sunrise -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="heritage" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/hero-taj-mahal.jpg" alt="Taj Mahal Golden Triangle" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-geo-alt-fill text-warning me-1"></i> Agra, Uttar Pradesh
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Taj Mahal Sunrise View</h5>
+                <p class="small text-secondary mb-3">The crowning jewel of the Golden Triangle. Explore with private chauffeur pickup from Delhi.</p>
+              </div>
+              <a href="packages.html" class="btn btn-outline-warning text-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                View Golden Triangle Tour
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Jaisalmer Thar Desert -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="heritage" data-aos="fade-up" data-aos-delay="250">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/tour-rajasthan.jpg" alt="Jaisalmer Thar Desert Safari" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-geo-alt-fill text-warning me-1"></i> Jaisalmer, Rajasthan
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Sam Sand Dunes & Desert Safari</h5>
+                <p class="small text-secondary mb-3">Thrilling sunset camel safaris, desert 4x4 dune bashing, and Swiss luxury tent camping under the stars.</p>
+              </div>
+              <a href="packages.html" class="btn btn-outline-warning text-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                View Rajasthan Tour
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Kerala Backwaters Houseboat -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="nature" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/tour-kerala.jpg" alt="Kerala Backwaters Houseboat" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-geo-alt-fill text-warning me-1"></i> Alleppey, Kerala
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Tranquil Alleppey Houseboat</h5>
+                <p class="small text-secondary mb-3">Glide through lush palm-fringed backwaters with delicious traditional South Indian meals onboard.</p>
+              </div>
+              <a href="packages.html" class="btn btn-outline-warning text-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                View Kerala Tour
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Kashmir Dal Lake -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="nature" data-aos="fade-up" data-aos-delay="350">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/tour-kashmir.jpg" alt="Kashmir Dal Lake Shikara" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-geo-alt-fill text-warning me-1"></i> Srinagar, Kashmir
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Dal Lake Shikara & Snow Peaks</h5>
+                <p class="small text-secondary mb-3">Scenic wooden boat rides surrounded by snow-draped Himalayan mountains and houseboats.</p>
+              </div>
+              <a href="packages.html" class="btn btn-outline-warning text-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                View Kashmir Tour
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Varanasi Ganga Aarti -->
+        <div class="col-lg-4 col-md-6 gallery-item-col" data-category="spiritual" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-lift bg-white">
+            <div class="position-relative overflow-hidden" style="height:250px;">
+              <img src="images/tour-varanasi.jpg" alt="Varanasi Dashashwamedh Ganga Aarti" class="w-100 h-100 object-fit-cover gallery-card-img">
+              <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold">
+                <i class="bi bi-geo-alt-fill text-warning me-1"></i> Varanasi, Uttar Pradesh
+              </span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold text-dark mb-1">Grand Evening Ganga Aarti</h5>
+                <p class="small text-secondary mb-3">Witness the ancient spiritual rituals with flaming brass lamps and chants along the river Ganges.</p>
+              </div>
+              <a href="packages.html" class="btn btn-outline-warning text-dark fw-bold rounded-pill btn-sm py-2 px-3 mt-auto">
+                View Spiritual Tour
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <h4>Royal<span>Vistas</span> Tours</h4>
+          <p>
+            Your trusted Indian tour operator and chauffeur car fleet since 2001. Operating across Delhi, Rajasthan,
+            Kerala, Kashmir, Varanasi, and all major Indian tourist circuits with All India Tourist Permits.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/919024288xxxx" target="_blank" class="btn btn-whatsapp-header py-2 px-3 small">
+              <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="tel:+919024288xxxx" class="btn btn-call-header py-2 px-3 small">
+              <i class="bi bi-telephone"></i> Call Desk
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Tour Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Indian Tours</h5>
+          <ul class="footer-links-list">
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Golden Triangle</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Jodhpur Jaisalmer</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Royal Rajasthan</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Kerala Backwaters</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Kashmir Valley</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right"></i> Varanasi Ayodhya</a></li>
+          </ul>
+        </div>
+
+        <!-- Car Fleet Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Our Fleet</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html#fleetSection"><i class="bi bi-chevron-right"></i> Innova Crysta SUV</a></li>
+            <li><a href="index.html#fleetSection"><i class="bi bi-chevron-right"></i> Maruti Dzire Sedan</a></li>
+            <li><a href="index.html#fleetSection"><i class="bi bi-chevron-right"></i> Maruti Ertiga MUV</a></li>
+            <li><a href="index.html#fleetSection"><i class="bi bi-chevron-right"></i> Toyota Fortuner VIP</a></li>
+            <li><a href="index.html#fleetSection"><i class="bi bi-chevron-right"></i> Tempo Traveller 12/17</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Fleet & Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Branches -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">Contact & Helpdesk</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong>Head Office:</strong> Paota, Jodhpur, Rajasthan 342001, India<br>
+              <strong>Branch Office:</strong> Connaught Place, New Delhi 110001, India
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <strong>24x7 Helpline:</strong> +91 9024288xxxx<br>
+              <strong>WhatsApp Hotline:</strong> +91 9024288xxxx
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong>General Inquiries:</strong> info@royalvistastours.com<br>
+              <strong>Tour Bookings:</strong> booking@royalvistastours.com
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">
+          © 2026 RoyalVistas Tours & Cabs. All Rights Reserved. Regulated under Ministry of Tourism, Govt. of India.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919024288xxxx" target="_blank" class="floating-whatsapp-btn" aria-label="Chat with us on WhatsApp">
+    <div class="floating-whatsapp-pulse"></div>
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
